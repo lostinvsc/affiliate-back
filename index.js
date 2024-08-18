@@ -10,8 +10,8 @@ const Product = require('./Model/Product.js')
 require('dotenv').config();
 const port =process.env.PORT || 3000;
 const app = express();
-const frontend = process.env.FRONTEND || "http://localhost:5173"
-const admin = process.env.ADMIN || "http://localhost:5174"
+const frontend = process.env.FRONTEND || "http://localhost:10000"
+const admin = process.env.ADMIN || "http://localhost:10001"
 app.use(cors({
     origin: [frontend , admin],
     credentials: true
